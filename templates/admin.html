@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Referral App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Admin Dashboard</h1>
+      <a href="/logout" style="text-decoration: none; font-weight: bold;">Logout</a>
+    </div>
+    <p>Welcome, Admin</p>
+
+    <section>
+      <h2>Create User</h2>
+      <form id="newUserForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="gender" placeholder="Gender" required />
+        <input type="text" id="qualification" placeholder="Qualification" required />
+        <input type="text" id="courses_done" placeholder="Courses Done" required />
+        <input type="text" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="text" id="city" placeholder="City" required />
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="password" id="repeatPassword" placeholder="Repeat Password" required />
+        <button type="submit">Create</button>
+      </form>
+      <div id="createUserMessage"></div>
+    </section>
+
+    <section>
+      <h2>Approve / Reject Referrals</h2>
+      <table id="referralTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Adjust Points</h2>
+      <form id="adjustPointsForm">
+        <input type="text" id="adjustUsername" placeholder="Username" required />
+        <input type="number" id="adjustPoints" placeholder="Points" required />
+        <input type="text" id="adjustReason" placeholder="Reason" required />
+        <button type="submit">Adjust</button>
+      </form>
+      <div id="adjustPointsMessage"></div>
+    </section>
+
+    <section>
+      <h2>Generate Report</h2>
+      <form id="reportForm">
+        <input type="date" id="startDate" required />
+        <input type="date" id="endDate" required />
+        <button type="submit">Generate Report</button>
+      </form>
+      <a id="downloadLink" href="#" style="display:none;" download>Download CSV</a>
+    </section>
+  </div>
+  <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+</body>
+</html>

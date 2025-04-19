@@ -1,0 +1,75 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #003366; /* dark blue */
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.brand-title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, button, select, textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #d71920; /* red */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #a70e15;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #003366;
+  color: white;
+}

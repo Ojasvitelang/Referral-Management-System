@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard - Referral App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>User Dashboard</h1>
+
+    <section>
+      <h2>Welcome, <span id="usernameDisplay"></span></h2>
+      <p>Tier: <span id="tier"></span></p>
+      <p>Points: <span id="points"></span></p>
+    </section>
+
+    <section>
+      <h2>Submit Referral</h2>
+      <form id="referralForm">
+        <input type="text" id="refName" placeholder="Name" required />
+        <input type="text" id="refPhone" placeholder="Phone" required />
+        <input type="text" id="refCity" placeholder="City" required />
+        <input type="text" id="refRelation" placeholder="Relationship" required />
+        <input type="text" id="refQualification" placeholder="Qualification" required />
+        <input type="text" id="refCourse" placeholder="Course Interested In" required />
+        <input type="email" id="refEmail" placeholder="Email (optional)" />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="referralMessage"></div>
+    </section>
+
+    <section>
+      <h2>Upload Referrals (CSV)</h2>
+      <form id="csvUploadForm" enctype="multipart/form-data">
+        <input type="file" id="csvFile" name="file" accept=".csv" />
+        <button type="submit">Upload</button>
+      </form>
+      <div id="csvUploadMessage"></div>
+    </section>
+
+    <section>
+      <h2>Your Referrals</h2>
+      <table id="referralTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>Status</th>
+            <th>Points Awarded</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  <script src="{{ url_for('static', filename='js/user.js') }}"></script>
+</body>
+</html>

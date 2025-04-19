@@ -1,0 +1,64 @@
+{
+  "logs": [
+    {
+      "timestamp": "2025-04-19T08:43:50.037672Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T08:57:46.872202Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:06:40.930940Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:11:45.958680Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:19:00.768058Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:22:14.102066Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:29:06.101354Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:35:37.949948Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:41:43.051616Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:48:26.539439Z",
+      "user": "admin",
+      "action": "Logged in"
+    },
+    {
+      "timestamp": "2025-04-19T09:49:12.864057Z",
+      "user": "admin",
+      "action": "Created user user1"
+    },
+    {
+      "timestamp": "2025-04-19T09:50:07.208203Z",
+      "user": "user1",
+      "action": "Logged in"
+    }
+  ]
+}

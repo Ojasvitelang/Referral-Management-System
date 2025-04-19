@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin2025",
+      "name": "System Admin",
+      "gender": "Other",
+      "qualification": "N/A",
+      "courses_done": [],
+      "phone": "0000000000",
+      "email": "admin@iican.in",
+      "city": "HQ",
+      "tier": "Bronze",
+      "points": 0,
+      "referrals": [],
+      "role": "admin"
+    },
+    {
+      "username": "user1",
+      "password": "User@1234",
+      "name": "Test user",
+      "gender": "Female",
+      "qualification": "MBBS",
+      "courses_done": [
+        "PGDCC"
+      ],
+      "phone": "9085734902",
+      "email": "a@gmail.com",
+      "city": "Pune",
+      "tier": "Bronze",
+      "points": 0,
+      "referrals": []
+    }
+  ]
+}
