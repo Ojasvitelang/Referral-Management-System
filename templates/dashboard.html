@@ -5,31 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>User Dashboard - Referral App</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
-
-
 </head>
 <body>
 
+
   <div class="container">
-    <h1>User Dashboard</h1>
+    <div class="container">
+      <div style="display: flex; justify-content: center; align-items: center">
+        <h1>User Dashboard</h1>
+      </div>
 
     <section>
-      <h2>Welcome, <span id="usernameDisplay"></span></h2>
+      <h2>Welcome, <span id="usernameDisplay">{{ session['username'] }}</span></h2>
       <p>Tier: <span id="tier"></span></p>
       <p>Points: <span id="points"></span></p>
     </section>
 
     <section>
       <h2>Submit Referral</h2>
-      <form id="referralForm">
-        <input type="text" id="refName" placeholder="Name" required />
-        <input type="text" id="refPhone" placeholder="Phone" required />
-        <input type="text" id="refCity" placeholder="City" required />
-        <input type="text" id="refRelation" placeholder="Relationship" required />
-        <input type="text" id="refQualification" placeholder="Qualification" required />
-        <input type="text" id="refCourse" placeholder="Course Interested In" required />
-        <input type="email" id="refEmail" placeholder="Email (optional)" />
+      <form id="referralForm" data-username="{{ session['username'] }}">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="phone" placeholder="Phone" required />
+        <input type="text" name="city" placeholder="City" required />
+        <input type="text" name="relationship" placeholder="Relationship" required />
+        <input type="text" name="qualification" placeholder="Qualification" required />
+        <input type="text" name="course_interested" placeholder="Course Interested In" required />
+        <input type="email" name="email" placeholder="Email (optional)" />
         <button type="submit">Submit</button>
       </form>
       <div id="referralMessage"></div>
@@ -50,16 +51,17 @@
         <thead>
           <tr>
             <th>Name</th>
-            <th>Phone</th>
-            <th>City</th>
             <th>Status</th>
-            <th>Points Awarded</th>
+            <th>Points</th>
+            <th>Course</th>
+            <th>City</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </section>
   </div>
+
   <script src="{{ url_for('static', filename='js/user.js') }}"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+{
+  "referrals": [
+    {
+      "id": "ref_001",
+      "referrer": "user1",
+      "name": "Sanya Gijare",
+      "phone": "3874657234",
+      "email": "sanya@gmail.com",
+      "qualification": "MBBS",
+      "relationship": "Friend",
+      "course_interested": "PGDCC",
+      "city": "Pune",
+      "status": "Converted",
+      "created_at": "2025-04-23",
+      "points_awarded": 900,
+      "converted_at": "2025-04-23",
+      "admission_amount": 60000
+    },
+    {
+      "id": "ref_002",
+      "referrer": "user1",
+      "name": "Ojasvi Telang",
+      "phone": "09987860961",
+      "email": "",
+      "qualification": "MBBS",
+      "relationship": "friend",
+      "course_interested": "pgdcc",
+      "city": "Mira Bhayandar",
+      "status": "Converted",
+      "created_at": "2025-04-23",
+      "points_awarded": 6300,
+      "converted_at": "2025-04-23",
+      "admission_amount": 600000
+    }
+  ]
+}
